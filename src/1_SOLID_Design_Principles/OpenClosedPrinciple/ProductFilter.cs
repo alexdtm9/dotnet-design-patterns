@@ -2,12 +2,12 @@ namespace OpenClosedPrinciple;
 
 public class ProductFilter
 {
-    public IEnumerable<T> FilterBySize(IEnumerable<T> products, Size size) =>
+    public IEnumerable<Product> FilterBySize(IEnumerable<Product> products, Size size) =>
         products.Where(product => product.Size == size);
 
-    public IEnumerable<T> FilterByColor(IEnumerable<T> products, Color color) =>
+    public IEnumerable<Product> FilterByColor(IEnumerable<Product> products, Color color) =>
         products.Where(product => product.Color == color);
 
-    public IEnumerable<T> FilterBySizeAndColor(IEnumerable<T> products, Size size, Color color) =>
+    public IEnumerable<Product> FilterBySizeAndColor(IEnumerable<Product> products, Size size, Color color) =>
         products.Where(product => product.Size == size && product.Color == color);
 }

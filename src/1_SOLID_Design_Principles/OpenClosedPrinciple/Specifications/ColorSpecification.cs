@@ -2,7 +2,7 @@ using OpenClosedPrinciple.Abstractions;
 
 namespace OpenClosedPrinciple.Specifications;
 
-public class ColorSpecification : ISpecifications<T>
+public class ColorSpecification : ISpecifications<Product>
 {
     private readonly Color _color;
     
@@ -11,7 +11,7 @@ public class ColorSpecification : ISpecifications<T>
         _color = color;
     }
     
-    public bool IsSatisfied(T item)
+    public bool IsSatisfied(Product item)
     {
         return item.Color == _color;
     }

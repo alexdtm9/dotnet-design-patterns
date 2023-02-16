@@ -4,11 +4,11 @@ using OpenClosedPrinciple.Specifications;
 
 // Open Closed Principle =>  Classes should be open for extensions but they should be closed for modifications.
 
-var products = new List<T>
+var products = new List<Product>
 {
-    new T("Apple", Color.Green, Size.Small),
-    new T("Tree", Color.Green, Size.Large),
-    new T("House", Color.Blue, Size.Large)
+    new Product("Apple", Color.Green, Size.Small),
+    new Product("Tree", Color.Green, Size.Large),
+    new Product("House", Color.Blue, Size.Large)
 };
 
 var pf = new ProductFilter();
@@ -27,7 +27,7 @@ foreach (var product in bf.Filter(products, new ColorSpecification(Color.Green))
 
 Console.WriteLine("Large blue products:");
 foreach (var product in bf.Filter(products,
-             new AndSpecification<T>(new ColorSpecification(Color.Blue), new SizeSpecification(Size.Large))))
+             new AndSpecification<Product>(new ColorSpecification(Color.Blue), new SizeSpecification(Size.Large))))
 {
     Console.WriteLine($" - {product.Name} is large and blue");
 }

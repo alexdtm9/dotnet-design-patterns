@@ -2,9 +2,9 @@ using OpenClosedPrinciple.Abstractions;
 
 namespace OpenClosedPrinciple.Helpers;
 
-public class BetterFilter : IFilter<T>
+public class BetterFilter : IFilter<Product>
 {
-    public IEnumerable<T> Filter(IEnumerable<T> items, ISpecifications<T> spec)
+    public IEnumerable<Product> Filter(IEnumerable<Product> items, ISpecifications<Product> spec)
     {
         foreach (var item in items)
         {

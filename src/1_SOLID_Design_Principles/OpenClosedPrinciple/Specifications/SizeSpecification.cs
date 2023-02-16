@@ -2,7 +2,7 @@ using OpenClosedPrinciple.Abstractions;
 
 namespace OpenClosedPrinciple.Specifications;
 
-public class SizeSpecification : ISpecifications<T>
+public class SizeSpecification : ISpecifications<Product>
 {
     private readonly Size _size;
 
@@ -11,7 +11,7 @@ public class SizeSpecification : ISpecifications<T>
         _size = size;
     }
 
-    public bool IsSatisfied(T item)
+    public bool IsSatisfied(Product item)
     {
         return item.Size == _size;
     }

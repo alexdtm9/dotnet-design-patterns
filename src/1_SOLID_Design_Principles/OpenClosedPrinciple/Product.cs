@@ -1,6 +1,6 @@
 namespace OpenClosedPrinciple;
 
-public class T
+public class Product
 {
     public string Name { get; }
 
@@ -8,7 +8,7 @@ public class T
 
     public Size Size { get; }
 
-    public T(string name, Color color, Size size)
+    public Product(string name, Color color, Size size)
     {
         Name = name ?? throw new ArgumentNullException(paramName: nameof(name));
         Color = color;
