@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversionPrincipl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "src\2_Creational_Design_Patterns\FactoryPattern\FactoryPattern.csproj", "{2C7CD585-5C11-4C82-BADB-C465E43FE8EB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational Design Patterns", "Creational Design Patterns", "{186AC592-BE70-4E12-8669-E310E8D7EFCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,5 +53,6 @@ Global
 		{DC24D267-9B42-46F8-9A98-A394761471BF} = {97A8B8F9-147F-49B9-8B6F-2E3812CD876E}
 		{65F0D4A4-6CE7-4021-A7AF-7FA279785A22} = {97A8B8F9-147F-49B9-8B6F-2E3812CD876E}
 		{E5DCFA6C-75FE-40E2-A3D0-649E2C40EEFC} = {97A8B8F9-147F-49B9-8B6F-2E3812CD876E}
+		{2C7CD585-5C11-4C82-BADB-C465E43FE8EB} = {186AC592-BE70-4E12-8669-E310E8D7EFCB}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-namespace FactoryPattern;
+namespace FactoryPattern.Points;
 
 public enum CoordinateSystem
 {
@@ -34,28 +34,28 @@ public class Point
         this._y = y;
     }
 
-    // Factory method
-    public static Point NewCartesianPoint(double x, double y)
-    {
-        return new Point(x, y);
-    }
-    
-    // Factory method
-    public static Point NewPolarPoint(double rho, double theta)
-    {
-        return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
-    }
-    
-    // Factory method with async => awaiting is not possible in a constructor => we need a factory method
-    public static async Task<Point> NewCartesianPointAsync(double x, double y)
-    {
-        // await other async tasks
-        // ...
-        return await Task.Run(() => new Point(x, y));
-    }
-    
     public override string ToString()
     {
         return $"x: {_x}, y: {_y}";
+    }
+
+    public static class Factory
+    {
+        public static Point NewCartesianPoint(double x, double y)
+        {
+            return new Point(x, y);
+        }
+
+        public static Point NewPolarPoint(double rho, double theta)
+        {
+            return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
+        }
+
+        public static async Task<Point> NewCartesianPointAsync(double x, double y)
+        {
+            // await other async tasks
+            // ...
+            return await Task.Run<Point>(() => new Point(x, y));
+        }
     }
 }
