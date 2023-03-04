@@ -1,2 +1,2 @@
-# design-patterns
+# dotnet-design-patterns
 Design patterns in C#
