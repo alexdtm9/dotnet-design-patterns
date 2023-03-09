@@ -1,4 +1,4 @@
-namespace BuilderPattern.StepwiseBuilder;
+namespace StepwiseBuilder;
 
 public class Car
 {

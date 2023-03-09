@@ -1,6 +1,4 @@
-using BuilderPattern.StepwiseBuilder.Abstractions;
-
-namespace BuilderPattern.StepwiseBuilder;
+namespace StepwiseBuilder;
 
 public class CarBuilder
 {
