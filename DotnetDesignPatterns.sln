@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepwiseBuilder", "src\2_Cr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "src\2_Creational_Design_Patterns\FactoryPattern\AbstractFactory\AbstractFactory.csproj", "{D0CA27F1-E907-41CD-BCC6-CBEFF9889092}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "src\3_Structural_Design_Patterns\AdapterPattern\Adapter\Adapter.csproj", "{14FD1207-F4AE-4822-823D-8B36E906DEEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{D0CA27F1-E907-41CD-BCC6-CBEFF9889092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0CA27F1-E907-41CD-BCC6-CBEFF9889092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0CA27F1-E907-41CD-BCC6-CBEFF9889092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FD1207-F4AE-4822-823D-8B36E906DEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FD1207-F4AE-4822-823D-8B36E906DEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FD1207-F4AE-4822-823D-8B36E906DEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FD1207-F4AE-4822-823D-8B36E906DEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DEAC02FA-9BDC-446B-8FCB-296920FD335E} = {97A8B8F9-147F-49B9-8B6F-2E3812CD876E}
